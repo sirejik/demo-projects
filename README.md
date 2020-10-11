@@ -1,2 +1,2 @@
 # demo-projects
-pip install -r requirements.txt
+Here are demo projects with templates for working with different Python modules.
