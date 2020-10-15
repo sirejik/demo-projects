@@ -4,3 +4,4 @@ venv
 htmlcov
 *.pyc
 debug.log
+config.ini
