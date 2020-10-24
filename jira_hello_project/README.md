@@ -7,6 +7,7 @@ To install all required modules need to execute:
 ```
 pip install -r requirements.txt
 ```
+
 ## How to run the script.
 1. Create config.ini file by example sample.config.ini and specify access to Jira. 
 2. Execute the following command:

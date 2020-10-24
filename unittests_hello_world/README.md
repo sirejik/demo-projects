@@ -6,6 +6,7 @@ To install all required modules need to execute:
 ```
 pip install -r requirements.txt
 ```
+
 ## Check project state.
 To run unit tests and view the results, you need to run the following command:
 ```

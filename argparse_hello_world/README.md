@@ -14,6 +14,7 @@ Or specify all required and optional arguments:
 ```
 python main.py --required-argument 1 --optional-argument hello
 ```
+
 ## Logging.
 All information will be saved in the log file:
 ```
