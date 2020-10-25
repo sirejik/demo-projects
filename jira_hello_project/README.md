@@ -9,7 +9,7 @@ pip install -r requirements.txt
 ```
 
 ## How to run the script.
-1. Create config.ini file by example sample.config.ini and specify access to Jira. 
+1. Create config.ini file by example sample_config.ini and specify access to Jira.
 2. Execute the following command:
 ```
 python main.py

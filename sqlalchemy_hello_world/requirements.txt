@@ -1,1 +1,5 @@
+names
+psycopg2
+PTable
+random-password-generator
 sqlalchemy
