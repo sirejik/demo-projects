@@ -30,6 +30,34 @@ services:
     depends_on:
       - elasticsearch
 
+  logstash:
+    image: docker.elastic.co/logstash/logstash:7.9.3
+    container_name: logstash
+    volumes:
+      - ./logstash/pipeline:/usr/share/logstash/pipeline:ro
+      - ./logs:/var/logs
+    ports:
+      - 5000:5000
+    environment:
+      - "LS_JAVA_OPTS=-Xmx256m -Xms256m"
+    networks:
+      - elk_net
+    depends_on:
+      - elasticsearch
+
+  filebeat:
+    image: docker.elastic.co/beats/filebeat:7.9.3
+    container_name: filebeat
+    command: filebeat -e -strict.perms=false
+    volumes:
+      - ./filebeat/filebeat.yml:/usr/share/filebeat/filebeat.yml:ro
+      - ./logs:/var/log
+    networks:
+      - elk_net
+    depends_on:
+      - elasticsearch
+
+
 volumes:
   elasticsearch_data:
   kibana_config:
